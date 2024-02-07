@@ -14,15 +14,11 @@ function App() {
     <div className="App">
       <h1>Welcome</h1>
       <div className="container">
-        <div className="form-container">
-          <Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-        </div>
-        <div className="form-container">
-          <Register isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-        </div>
+        {!isLoggedIn && <Login setIsLoggedIn={setIsLoggedIn} />}
+        {!isLoggedIn && <Register setIsLoggedIn={setIsLoggedIn} />}
       </div>
       {isLoggedIn && (
-        <button onClick={handleLogout}>Logout</button>
+        <button onClick={handleLogout} className="logout-button">Logout</button>
       )}
     </div>
   );
