@@ -3,9 +3,14 @@
   margin-top: 50px;
 }
 
-.container {
+.container.not-logged-in {
   display: flex;
   justify-content: center;
+}
+
+.container.logged-in {
+  width: 100%; 
+  text-align: center; 
 }
 
 .form-container {
@@ -50,4 +55,32 @@ button:hover {
 
 .logout-button:hover {
   background-color: #0056b3;
+}
+
+.logout-section {
+  margin-bottom: 20px; /* Add space between logout and change password */
+}
+
+.change-password-section {
+  padding-top: 20px;
+  border-top: 2px solid #ccc; /* Add a line between sections */
+  /* You can add more styling here like background-color, padding, etc. */
+}
+
+
+
+.section {
+  margin-bottom: 30px; /* Adds more space between sections */
+}
+
+.logout-button {
+  /* Add your button styling here */
+  padding: 10px 20px;
+  margin-bottom: 30px; /* Adds some space below the button */
+}
+
+/* Assuming you want to center everything */
+.container {
+  width: 100%; /* or max-width for larger viewports */
+  text-align: center; /* Center align the content */
 }
