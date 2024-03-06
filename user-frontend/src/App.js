@@ -30,6 +30,7 @@ function App() {
           <Login setIsLoggedIn={setIsLoggedIn} />
           <Register setIsLoggedIn={setIsLoggedIn} />
           <ResetPassword />
+          <MyOrders />
         </div>
       ) : (
         <div className="container logged-in">
